@@ -1,0 +1,2 @@
+name: Robert Berry, message: exchange 2 usd, message_exchange: USD: buy: 36.5686, sale: 36.5686. Date: 2023-08-14
+name: Brad Giel, message: exchange 2 usd hhhh, message_exchange: USD: buy: 36.5686, sale: 36.5686. Date: 2023-08-14
