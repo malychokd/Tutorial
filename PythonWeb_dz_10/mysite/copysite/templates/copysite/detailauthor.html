@@ -1,0 +1,7 @@
+{% extends "copysite/base.html" %} 
+{% block content %}
+
+<h1>{{author.fullname}}</h1>
+<p>Born: <b>{{author.born}}</b> in <b>{{author.location}}</b></p>
+<p>Description: <b> {{ author.bio }} </b></p>
+{% endblock %}
