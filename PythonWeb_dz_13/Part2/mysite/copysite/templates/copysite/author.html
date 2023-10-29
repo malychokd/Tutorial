@@ -1,0 +1,37 @@
+{% extends "copysite/base.html" %}
+
+{% block content %}
+
+<form method="POST" action="{% url 'copysite:author' %}">
+    {% csrf_token %}
+    <div style="padding: 10px">
+        <label>Full Name:
+            {{form.fullname }}
+        </label>
+        <span>{{ form.errors.fullname }}</span>
+    </div>
+    <div style="padding: 10px">
+        <label>Born:
+            {{form.born }}
+        </label>
+        <span>{{ form.errors.born }}</span>
+    </div>
+    <div style="padding: 10px">
+        <label>Location:
+            {{form.location }}
+        </label>
+        <span>{{ form.errors.location }}</span>
+    </div>
+    <div style="padding: 10px">
+        <label>Bio:
+            {{form.bio }}
+        </label>
+        <span>{{ form.errors.bio }}</span>
+    </div>
+    <div class="grid">
+        <button type="submit">Submit</button>
+        <button type="reset" class="secondary">Reset</button>
+    </div>
+</form>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Сopysite Quotes to Scrape</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"/>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'copysite/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="row header-box">
+            <div class="col-md-8">
+                <h1>
+                    <a href="/" style="text-decoration: none" style="text-decoration: none">Quotes to Scrape</a>
+                </h1>
+            </div>
+        </div>
+    
+
+        {% block content %} {% endblock %}
+    </div>
+</body>
+</html>

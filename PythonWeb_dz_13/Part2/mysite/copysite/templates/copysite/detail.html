@@ -1,0 +1,6 @@
+{% extends "copysite/base.html" %} {% load extract_tags %} {% block content %}
+
+<h1>{{quote.text}}</h1>
+<p>Author: <b>{{quote.author}}</b></p>
+<p>Tags: <small> {{ quote.tags|tags }} </small></p>
+{% endblock %}
