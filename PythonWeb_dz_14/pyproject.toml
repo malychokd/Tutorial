@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "pythonweb_dz_13"
+version = "0.1.0"
+description = "RestAPI Email and Security / Django password reset"
+authors = ["Malychok Denys"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.103.1"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+sqlalchemy = "^2.0.21"
+psycopg2 = "^2.9.7"
+alembic = "^1.12.0"
+pydantic = "^2.4.2"
+libgravatar = "^1.0.4"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.6"
+fastapi-mail = "^1.4.1"
+django = "^4.2.6"
+pillow = "^10.0.1"
+pymongo = "^4.5.0"
+mongoengine = "0.27.0"
+python-dotenv = "^1.0.0"
+django-environ = "^0.11.2"
+asyncio-redis = "^0.16.0"
+fastapi-limiter = "^0.1.5"
+cloudinary = "^1.36.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
